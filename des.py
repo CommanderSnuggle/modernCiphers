@@ -1,2 +1,8 @@
 from Crypto.Cipher import DES
-from Crypto import Random
+
+class DES:
+    def setKey(self,key):
+
+    def encrypt(self,plainText):
+
+    def decrypt(self,cipherText):

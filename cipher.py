@@ -3,8 +3,8 @@ from aes import *
 
 import sys
 
-aes = SimpleAES()
-des = SimpleDES()
+aes = AES()
+des = DES()
 
 
 def cipher(cipher_name, secret_key, enc_dec, input_file, output_file):
@@ -17,8 +17,8 @@ def cipher(cipher_name, secret_key, enc_dec, input_file, output_file):
     print("The input file is :", input_file)
     print("The output file is :", output_file)
 
-    options = {"AES" : (aes.setKey, {"ENC" : aes.encryption, "DEC" : aes.decryption}),
-               "DES" : (des.setKey, {"ENC" : des.encryption, "DEC" : des.decryption})}
+    options = {"AES" : (aes.setKey, {"ENC" : aes.encrypt, "DEC" : aes.decrypt}),
+               "DES" : (des.setKey, {"ENC" : des.encrypt, "DEC" : des.decrypt})}
 
     file = open(input_file, "r")
     for line in file:

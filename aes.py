@@ -1,2 +1,8 @@
 from Crypto.Cipher import AES
-from Crypto import Random
+
+class AES:
+    def setKey(self,key):
+
+    def encrypt(self,plainText):
+
+    def decrypt(self,cipherText):
