@@ -3,6 +3,8 @@ Group Members : Anette Ulrichsen Brandon Nguyen Farid Aalam Georden Grabuskie Jo
 TO EXECUTE THE CIPHERS
 Run the cipher.py file followed by the arguments
 
+You may need to install the python module pycrypto 
+root@name:~# pip install pycrypto --user
 The arguments are
 
 root@name:~# python cipher.py <cipher_name> <cipher_key> <ENC/DEC> <input_file> <output_file>

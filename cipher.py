@@ -3,8 +3,8 @@ from aes import *
 
 import sys
 
-aes = AES()
-des = DES()
+aes = aes()
+des = des()
 
 
 def cipher(cipher_name, secret_key, enc_dec, input_file, output_file):
@@ -39,4 +39,4 @@ if __name__ == "__main__":
     c = str(sys.argv[3])
     d = str(sys.argv[4])
     e = str(sys.argv[5])
-    cipher(a, b, c, d, e)
+    cipher(a, b, c, d, e) 

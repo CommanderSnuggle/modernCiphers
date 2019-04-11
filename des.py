@@ -10,7 +10,7 @@ plain = ""
 cipher = ""
 
 
-class DES:
+class des:
     def setKey(self,key):
         global done,x
         try:
@@ -28,18 +28,18 @@ class DES:
         while len(self.plainText) % 8 != 0:
             self.plainText += '*'
         
-        if Success:
-            cipher = obj.encrypt(self.plainText)
+        if done:
+            cipher = x.encrypt(self.plainText)
             return cipher
         else:
             print("Invalid Key")
             return self.plainText
 
     def decrypt(self,cipherText):
-         global plain, done, x
+        global plain, done, x
         self.cipherText = cipherText
-        if Success:
-            plain = obj.decrypt(self.cipherText)
+        if done:
+            plain = x.decrypt(self.cipherText)
             return plain
         else:
             print("Invalid Key")
