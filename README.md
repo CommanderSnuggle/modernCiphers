@@ -8,6 +8,7 @@ farid.aalam@csu.fullerton.edu
 Georden Grabuskie 
 ggrabuskie@csu.fullerton.edu
 John Margis
+margisj@csu.fullerton.edu
 
 TO EXECUTE THE CIPHERS
 Run the cipher.py file followed by the arguments
